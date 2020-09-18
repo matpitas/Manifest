@@ -1,0 +1,31 @@
+{
+    "name": "Straight",
+    "short_name": "Straight",
+    "start_url": "?/home=true",
+    "icons": [{
+        "src": "img/icone48.jpg",
+        "sizes": "48x48",
+        "type": "image/jpg"
+    },{
+        "src": "img/icone72.jpg",
+        "sizes": "72x72",
+        "type": "image/jpg"
+    },{
+        "src": "img/icone128.jpg",
+        "sizes": "128x128",
+        "type": "image/jpg"
+    },{
+        "src": "img/icone256.jpg",
+        "sizes": "256x256",
+        "type": "image/jpg"
+    },{
+        "src": "img/icone512.jpg",
+        "sizes": "512x512",
+        "type": "image/jpg"
+    }],
+    "theme-color": "#87C8E6",
+    "background-color": "#fff",
+    "display": "fullscreen",
+    "orientation": "any"
+
+}

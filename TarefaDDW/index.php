@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site DDW</title>
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="libs/MaterialDesign-Webfont-master/css/materialdesignicons.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     
@@ -77,7 +78,7 @@
             <p class="card-text">People of all ages can smile in our company.</p>
           </div>
       </div>
-      </div>
+    </div>
       <div class="col-md-4">
       <div class="card" style="width: 18rem;">
         <img src="img/imagem2.jpg" class="card-img-top" alt="...">
@@ -85,7 +86,7 @@
             <p class="card-text">We have the best services to offer to all audiences.</p>
           </div>
       </div>
-      </div>
+    </div>
       <div class="col-md-4">
       <div class="card" style="width: 18rem;">
         <img src="img/imagem3.jpg" class="card-img-top" alt="...">
@@ -93,9 +94,9 @@
             <p class="card-text">We always value the products as expected for our customers.</p>
           </div>
       </div>
-      </div>
     </div>
-    </div>
+  </div>
+</div>
 </div>
 <div class="jumbotron jumbotron-fluid bg-dark text-white">
   <div class="container text-center">
@@ -111,5 +112,14 @@
 </div>
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script>
+      if('serviceWorker' in navigator){
+        navigator.serviceWorker.register('sw.js').then(function(){
+          console.log('Service Worker foi registrado.')
+        }).catch(function(){
+          console.log('Service Worker não foi registrado.')
+        })
+      }
+    </script>
 </body>
 </html>
